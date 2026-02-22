@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Klasyczne 7 Czerwonych Róż",
+    "category": "Róże",
+    "price": 119.0,
+    "description": "Elegancki bukiet z 7 starannie wyselekcjonowanych czerwonych róż z przybraniem.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/APC_2294.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Bukiet 13 Czerwonych Róż",
+    "category": "Róże",
+    "price": 199.0,
+    "description": "Imponująca kompozycja 13 czerwonych róż, symbolizująca głębokie uczucie.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/APC_2287.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Subtelne 7 Różowych Róż",
+    "category": "Róże",
+    "price": 109.0,
+    "description": "Delikatny bukiet różowych róż, idealny na podziękowanie lub radosną okazję.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/APC_2340.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Bukiet 13 Różowych Róż",
+    "category": "Róże",
+    "price": 189.0,
+    "description": "Pełen wdzięku bukiet 13 różowych róż z dodatkiem zieleni dekoracyjnej.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/APC_2337.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Wiosenne 10 Kolorowych Tulipanów",
+    "category": "Tulipany",
+    "price": 69.0,
+    "description": "Mały, radosny bukiet mixu kolorowych tulipanów.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/20210111-SLA_1505_m-600x600.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bukiet 25 Kolorowych Tulipanów",
+    "category": "Tulipany",
+    "price": 149.0,
+    "description": "Bogata kompozycja 25 tulipanów w feerii barw.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/20210111-SLA_1532_m-600x600.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Gigantyczny Bukiet 50 Tulipanów",
+    "category": "Tulipany",
+    "price": 279.0,
+    "description": "Oszałamiająca ilość 50 kolorowych tulipanów, efekt WOW gwarantowany.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/20210111-SLA_1538_m-600x600.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Miks Tulipanów Czerwono-Różowych",
+    "category": "Tulipany",
+    "price": 145.0,
+    "description": "Stylowe połączenie 25 czerwonych i różowych tulipanów.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/20210111-SLA_1510_m-600x600.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Bajeczna Kolorowa Gipsówka",
+    "category": "Gipsówka",
+    "price": 129.0,
+    "description": "Trwała i efektowna kompozycja z tęczowej gipsówki.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/APC_4928.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Chmurka Różowej Gipsówki",
+    "category": "Gipsówka",
+    "price": 119.0,
+    "description": "Lekki i puszysty bukiet z różowej gipsówki.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/APC_5146.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Elegancki Różowy Storczyk",
+    "category": "Rośliny doniczkowe",
+    "price": 89.0,
+    "description": "Dwupędowy różowy storczyk w ozdobnej doniczce.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/d5516a60-262a-4ecc-8105-0d8fb0867c2c.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Klasyczny Biały Storczyk",
+    "category": "Rośliny doniczkowe",
+    "price": 89.0,
+    "description": "Szlachetny biały storczyk – idealny prezent biznesowy lub domowy.",
+    "imageUrl": "https://kwiaciarniavivaldi.pl/wp-content/uploads/5868db95-11a4-4675-97d6-9e7928e5b456.jpeg"
+  }
+]
