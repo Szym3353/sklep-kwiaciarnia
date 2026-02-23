@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: wheat;
+}
+
+.navbar__heading {
+  font-weight: 100;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar__options {
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.navbar__option {
+  cursor: pointer;
+}
+
+.navbar__option:hover {
+  text-decoration: underline;
+}
