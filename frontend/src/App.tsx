@@ -1,8 +1,9 @@
 import React from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Gallery from "./components/Gallery";
 
-type Product = {
+export type Product = {
   id: number;
   name: string;
   category: string;
@@ -20,22 +21,27 @@ function App() {
         if (!response.ok) throw new Error("Something went wrong");
 
         const data = await response.json();
+
         setProducts(data);
       } catch (error) {
         console.log(error);
       }
     };
+
     fetchProducts();
   });
+
+  React.useEffect(() => {
+    if (products && products.length > 0)
+      localStorage.setItem("products", JSON.stringify(products));
+  }, [products]);
 
   return (
     <div className="container">
       <Navbar />
       <div className="content">
         <p className="content__heading">Nasze produkty:</p>
-        {products.map((p) => (
-          <span>{p.name}</span>
-        ))}
+        <Gallery items={products} />
       </div>
       <Footer />
     </div>
