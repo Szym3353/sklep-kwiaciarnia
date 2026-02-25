@@ -33,6 +33,7 @@
   box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.24);
   width: 350px;
   overflow: hidden;
+  position: relative;
 }
 
 .gallery-item > img {
@@ -64,4 +65,21 @@
   font-size: 17px;
   font-weight: bolder;
   margin-top: auto;
+}
+
+.gallery-item__cart {
+  all: unset;
+  background-color: wheat;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  right: -100%;
+  top: 10px;
+  transition: 0.25s ease-in-out;
+}
+
+.gallery-item:hover .gallery-item__cart {
+  right: 10px;
 }

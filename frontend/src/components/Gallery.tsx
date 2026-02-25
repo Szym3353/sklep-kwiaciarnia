@@ -34,6 +34,7 @@ export default function Gallery({ items }: { items: Product[] }) {
 function GalleryItem(data: Product) {
   return (
     <div className="gallery-item">
+      <button className="gallery-item__cart">Dodaj do kosza</button>
       <img src={data.imageUrl} />
       <div className="gallery-item__info">
         <p className="gallery-item__title">{data.name}</p>
