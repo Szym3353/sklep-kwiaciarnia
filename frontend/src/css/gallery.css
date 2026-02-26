@@ -10,7 +10,7 @@
 
 .gallery__filters button {
   all: unset;
-  border: 1px solid wheat;
+  border: 1px solid #f5deb3;
   padding: 4px;
   cursor: pointer;
   transition: 0.25s;

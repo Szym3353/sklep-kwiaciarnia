@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Gallery from "./components/Gallery";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Cart from "./components/Cart";
 
 export type Product = {
   id: number;
@@ -40,10 +42,21 @@ function App() {
   return (
     <div className="container">
       <Navbar key={navRef.current} />
-      <div className="content">
-        <p className="content__heading">Nasze produkty:</p>
-        <Gallery items={products} callback={() => (navRef.current += 1)} />
-      </div>
+      <Routes>
+        <Route
+          element={
+            <div className="content">
+              <p className="content__heading">Nasze produkty:</p>
+              <Gallery
+                items={products}
+                callback={() => (navRef.current += 1)}
+              />
+            </div>
+          }
+          path="/"
+        />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
       <Footer />
     </div>
   );

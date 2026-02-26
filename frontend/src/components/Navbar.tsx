@@ -1,10 +1,12 @@
 import React from "react";
 import "../css/navbar.css";
 import type { Product } from "../App";
+import { Link, useNavigate } from "react-router";
 
 let initialCartItems = { count: 0, price: 0 };
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const options: { val: string; url: string }[] = [
     { val: "Katalog", url: "/" },
     { val: "O nas", url: "/" },
@@ -34,7 +36,9 @@ export default function Navbar() {
       <h1 className="navbar__heading">Kwiaciarnia Rosa</h1>
       <div className="navbar__options">
         {options.map((o) => (
-          <p className="navbar__option">{o.val}</p>
+          <Link to={o.url} className="navbar__option">
+            {o.val}
+          </Link>
         ))}
       </div>
       <div>
@@ -45,7 +49,7 @@ export default function Navbar() {
           </strong>
         </p>
         <div className="navbar__cart-buttons">
-          <button>Koszyk</button>
+          <button onClick={() => navigate("/cart")}>Koszyk</button>
           <button onClick={clearCart}>Wyczyść</button>
         </div>
       </div>
