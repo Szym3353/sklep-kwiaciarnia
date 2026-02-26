@@ -14,6 +14,7 @@ export type Product = {
 
 function App() {
   const [products, setProducts] = React.useState<Product[]>([]);
+  const navRef = React.useRef(1);
   React.useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -38,10 +39,10 @@ function App() {
 
   return (
     <div className="container">
-      <Navbar />
+      <Navbar key={navRef.current} />
       <div className="content">
         <p className="content__heading">Nasze produkty:</p>
-        <Gallery items={products} />
+        <Gallery items={products} callback={() => (navRef.current += 1)} />
       </div>
       <Footer />
     </div>
