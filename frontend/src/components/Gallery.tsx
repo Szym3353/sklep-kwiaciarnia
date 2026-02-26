@@ -2,7 +2,13 @@ import React from "react";
 import "../css/gallery.css";
 import type { Product } from "../App";
 
-export default function Gallery({ items }: { items: Product[] }) {
+export default function Gallery({
+  items,
+  callback,
+}: {
+  items: Product[];
+  callback: () => void;
+}) {
   const [sortOrder, setSortOrder] = React.useState<"asc" | "desc" | null>(null);
   const sortedItems = React.useMemo(() => {
     if (!sortOrder) return items;
@@ -24,14 +30,14 @@ export default function Gallery({ items }: { items: Product[] }) {
       </div>
       <div className="gallery-content">
         {sortedItems.map((item) => (
-          <GalleryItem {...item} key={item.id} />
+          <GalleryItem callback={callback} {...item} key={item.id} />
         ))}
       </div>
     </div>
   );
 }
 
-function GalleryItem(data: Product) {
+function GalleryItem(data: Product & { callback: () => void }) {
   const handleCart = () => {
     let currCart = localStorage.getItem("cart");
     if (currCart) {
@@ -41,6 +47,8 @@ function GalleryItem(data: Product) {
     } else {
       localStorage.setItem("cart", JSON.stringify([data]));
     }
+
+    data.callback();
   };
 
   return (
